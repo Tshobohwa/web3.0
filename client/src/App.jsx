@@ -1,14 +1,18 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Navabar from "./components/navbar";
+import Services from "./components/services";
+import Transaction from "./components/Transaction";
+import Welcome from "./components/welcome";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <p className="underline font-semibold">Hello MRKRs</p>
+    <div className="min-h-screen">
+      <div className="bg-gradient-welcome">
+        <Navabar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transaction />
     </div>
   );
 }
