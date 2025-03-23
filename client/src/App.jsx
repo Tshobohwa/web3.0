@@ -7,7 +7,7 @@ import Welcome from "./components/welcome";
 function App() {
   return (
     <div className="min-h-screen">
-      <div className="bg-gradient-welcome">
+      <div className="gradient-bg-welcome">
         <Navabar />
         <Welcome />
       </div>
